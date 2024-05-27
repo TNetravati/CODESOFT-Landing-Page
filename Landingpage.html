@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="task1.css">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <div class="social-line"></div>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+            <div class="social-line"></div>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+            <div class="social-line"></div>
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+            <div class="social-line"></div>
+             <a href="#"><i class="fab fa-youtube icon"></i></a>
+            <div class="social-line"></div>
+            <a href="#"><i class="fab fa-pinterest icon"></i></a>
+            <div class="social-line"></div>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+            <div class="social-line"></div>
+        </div>
+        
+        <div class="contact-info">
+            <i class="fas fa-phone icon"></i> <span>123-456-7890</span>
+            <div class="social-line"></div>
+            <i class="far fa-envelope icon"></i> <span>example@example.com</span>
+        </div>
+        
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Buy One</a></li>
+        </ul>
+    </nav>
+
+    <div class="landing-page">
+        <i class="fas fa-globe icon"></i>
+        <a href="#">Landing Page</a>
+    </div>
+    <div class="image">
+        <img src="https://www.spectacularvillasgoa.com/wp-content/uploads/2023/10/2.jpg">
+      
+        <div class="icons-container">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="message-container">
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+    <div class="border-box-container">
+        <div class="border-box">
+            <div class="business-launch">
+                <h3><i class="fas fa-rocket"></i> Launch Your Business</h3>
+                <p>Develop a comprehensive business plan outlining your goals, target market, and marketing strategy. Ensure legal compliance by registering your business, obtaining necessary permits.</p>
+            </div>
+        </div>
+        <div class="border-box">
+            <div class="support-team">
+                <h3><i class="fas fa-users"></i> Online Support Team</h3>
+                <p>This team typically consists of trained representatives who engage with customers through various online channels such as live chat, email, and social media. To build an efficient online support team.</p>
+            </div>
+        </div>
+        <div class="border-box">
+            <div class="time-management">
+                <h3><i class="far fa-clock"></i> Time Management</h3>
+                <p>To optimize time management, automate booking processes with software that handles reservations, payments, and availability updates. Establish clear policies and procedures for handling inquiries. </p>
+            </div>
+        </div>
+    </div>
+    <section class="about-us">
+        <div class="about-us-content">
+            <h2>About Us</h2>
+            <p> We welcome you to a world of unparalleled luxury and tranquility. Our journey began with a passion for hospitality and a dream to create unforgettable experiences for discerning travelers seeking refuge from the ordinary. Nestled amidst lush tropical landscapes and overlooking pristine coastlines, our collection of villas offers a sanctuary where relaxation and indulgence converge. Each property is meticulously designed with meticulous attention to detail, blending modern amenities with timeless elegance to ensure a stay that exceeds expectations. Our dedicated team of hospitality professionals is committed to curating bespoke experiences tailored to your every desire, from personalized concierge services to immersive cultural excursions</p>
+            <button class="read-more-btn" onclick="openModal()">Read More</button>
+
+        </div>
+      
+    <img class="about-us-image" src="C:\Users\Admin\OneDrive\Documents\fsd\about us image task1.jpg" alt="About Us Image">
+    
+</div>
+
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>But beyond the opulent interiors and breathtaking views lies our unwavering commitment to sustainability and community stewardship, ensuring that your stay with us leaves a positive impact on both the environment and local communities. But don't just take our word for it – hear from our delighted guests who have experienced the magic of Villa Serenity firsthand. Whether you're seeking a romantic retreat, a family getaway, or a destination wedding venue, we invite you to escape to Villa Serenity and discover the true meaning of luxury hospitality. Contact us today to begin your journey to serenity........
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.querySelector(".about-us-content button");
+        var span = document.getElementsByClassName("close")[0];
+        function openModal() {
+            modal.style.display = "block";
+        }
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+  <h2 class="our-services-heading">Our Services</h2>
+
+  <section class="our-services">
+      <div class="service">
+          <div class="service-image">
+              <img src="C:\Users\Admin\OneDrive\Documents\fsd\service img task 1.png" alt="Service 1 Image">
+          </div>
+          <div class="service-info">
+              
+              <p>Where every detail is meticulously curated to ensure your stay is nothing short of perfection. Our commitment to excellence extends to the maintenance of our property, ensuring that every corner of our villa reflects the highest standards of comfort and cleanliness.
+
+                Routine maintenance is at the heart of our operations at Villa. </p>
+              <h3>1</h3>
+          </div>
+      </div>
+      <div class="service">
+          <div class="service-image">
+              <img src="C:\Users\Admin\OneDrive\Documents\fsd\service2 img task1.jpg" alt="Service 2 Image">
+          </div>
+          <div class="service-info">
+              
+              <p>Where your journey to relaxation begins the moment you arrive. Located just a short drive from the bustling city center, our tranquil retreat offers a haven of serenity amidst the vibrant energy of the surrounding area. Getting here is a breeze – simply follow the scenic coastal road from the nearby International Airport. </p>
+              <h3> 2</h3>
+          </div>
+      </div>
+      <div class="service">
+          <div class="service-image">
+              <img src="C:\Users\Admin\OneDrive\Documents\fsd\service3 img task1.png" alt="Service 3 Image">
+          </div>
+          <div class="service-info">
+            
+              <p>We believe that every aspect of your stay should be an exquisite experience, including the culinary delights that await you. Our villa offers a gastronomic journey that tantalizes the taste buds and satisfies the soul.
+
+                Start your day with a leisurely breakfast served on the private terrace overlooking lush tropical gardens.</p>
+              <h3> 3</h3>
+          </div>
+      </div>
+  </section>
+  <section class="location">
+    <div class="location-image">
+        <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/image/upload/Browse%20my%20destination/mysore.webp" alt="Location Image 1">
+    </div>
+    <div class="location-info">
+        <h2>Mysore</h2>
+    </div>
+</section>
+
+<section class="location-container">
+    <section class="location">
+        <div class="location-image">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/image/upload/Browse%20my%20destination/wayanad.webp" alt="Location Image 1">
+        </div>
+        <div class="location-info">
+            <h2>Wayanad</h2>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="location-image">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/image/upload/Browse%20my%20destination/mangalore.webp" alt="Location Image 2">
+        </div>
+        <div class="location-info">
+            <h2>Manglore</h2>
+        </div>
+
+    </section>
+    
+</section>
+<section class="available-weekend">
+    <h2>Available This Weekend</h2>
+    <div class="available-weekend-container">
+        <div class="weekend-item">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/tr:w-800,h-460,q-62,f-webp/image/upload/joxpxns6ufiyu2pdr42u" alt="Weekend Item 1">
+            <h3>Ambe Moha</h3>
+            <p>₹ 20,200
+                /night
+                
+                (₹9,600.00 x 2 Rooms)</p>
+        </div>
+        <div class="weekend-item">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/tr:w-800,h-460,q-62,f-webp/image/upload/uirswwhdjtugwchbk4py" alt="Weekend Item 2">
+            <h3>Parsi Manor</h3>
+            <p>₹ 4,416
+                /night</p>
+        </div>
+        <div class="weekend-item">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/tr:w-800,h-460,q-62,f-webp/image/upload/tz0b13gwz5vgwippfbnz" alt="Weekend Item 3">
+            <h3>Mariposa by the River </h3>
+            <p>₹ 67,620
+                /night</p>
+        </div>
+        <div class="weekend-item">
+            <img src="https://ik.imagekit.io/5tgxhsqev/saffronstays-media/tr:w-800,h-460,q-62,f-webp/image/upload/ehny9j7fqoknw8docbgj" alt="Weekend Item 4">
+            <h3>KAIROS Greek Village </h3>
+            <p>₹ 71,544
+                /night
+                
+                </p>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+</section>
+
+
+
+  <footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <ul class="footer-menu">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
